@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Drop down manu</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <!-- make sure your logo icon is squre enter your image url in src="here"  -->
+        <div class="logo"><!--<img src="" />--><label>logo</label></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tutorial</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Supports</a></li>
+          <li>
+            <a href="#" class="dropdown-container"
+              >Service <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <ul class="drop-down">
+              <li><a href="#">service1</a></li>
+              <li><a href="#">service2</a></li>
+              <li>
+                <a href="#" class="dropdown-container"
+                  >service3 <i class="fa-solid fa-caret-down"></i
+                ></a>
+                <ul class="drop-down">
+                  <li><a href="#">marketing</a></li>
+                  <li><a href="#">seo</a></li>
+                  <li><a href="#">web design</a></li>
+                  <li><a href="#">app design</a></li>
+                </ul>
+              </li>
+              <li><a href="#">service4</a></li>
+              <li><a href="#">service5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Tarms</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
