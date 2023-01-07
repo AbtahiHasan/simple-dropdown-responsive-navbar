@@ -37,6 +37,7 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
+  padding: 0 10px;
 }
 .header .navbar .logo {
   color: var(--nav-hover);
@@ -104,14 +105,14 @@
     align-items: center;
   }
   .navbar {
-    padding: 10px;
+    padding: 15px 10px;
   }
   .navbar .navlinks {
     display: none;
   }
   .navbar .navlinks.active {
     position: absolute;
-    top: 60px;
+    top: 40px;
     left: 0;
     right: 0;
     display: flex;
