@@ -19,6 +19,8 @@
 
 .header {
   background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -77,7 +79,7 @@
 .navbar .navlinks li > ul {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   list-style: none;
   width: 150px;
@@ -101,29 +103,35 @@
     display: flex;
     align-items: center;
   }
+  .navbar {
+    padding: 10px;
+  }
   .navbar .navlinks {
+    display: none;
+  }
+  .navbar .navlinks.active {
     position: absolute;
-    top: 5%;
+    top: 60px;
     left: 0;
     right: 0;
-    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: column;
     background: var(--white);
   }
   .navbar .navlinks li {
     width: 100%;
-    display: block;
+    border-top: 1px solid var(--gray);
   }
   .navbar .navlinks li ul {
-    position: relative;
+    position: static;
     width: 100%;
   }
   .navbar .navlinks li ul li {
     background: var(--white);
-    width: 100%;
+    margin-left: 20px;
   }
   .navbar .navlinks li ul li ul {
+    position: static;
     width: 100%;
-    position: absolute;
-    left: 0;
   }
 }
